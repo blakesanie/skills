@@ -1,0 +1,19 @@
+{
+  "skills": [
+    {
+      "name": "lean-swe",
+      "remote": "blakesanie/skills",
+      "version": "latest"
+    },
+    {
+      "name": "gh-stack",
+      "remote": "github/gh-stack",
+      "version": "latest"
+    },
+    {
+      "name": "unslop",
+      "remote": "cursor/plugins",
+      "version": "latest"
+    }
+  ]
+}
