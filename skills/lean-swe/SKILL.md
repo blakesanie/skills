@@ -1,5 +1,5 @@
 ---
-name: efficient-software-engineering
+name: lean-swe
 description: Enforces high-density, low-bloat software engineering principles—treating expressive code as the sole source of truth, managing boundary types via schemas, maintaining living docs, and optimizing PRs for human review.
 ---
 
