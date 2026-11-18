@@ -1,0 +1,6 @@
+[submodule "vendor/gh-stack"]
+	path = vendor/gh-stack
+	url = https://github.com/github/gh-stack.git
+[submodule "vendor/cursor-plugins"]
+	path = vendor/cursor-plugins
+	url = https://github.com/cursor/plugins.git
