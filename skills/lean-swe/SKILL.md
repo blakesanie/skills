@@ -1,6 +1,6 @@
 ---
 name: lean-swe
-description: Enforces high-density, low-bloat software engineering principles—treating expressive code as the sole source of truth, managing boundary types via schemas, maintaining living docs, and optimizing PRs for human review.
+description: The software development standard to live by. Enforces high-density, low-bloat software engineering principles—treating expressive code as the sole source of truth, managing boundary types via schemas, maintaining living docs, and optimizing PRs for human review.
 ---
 
 ## Core Philosophy
@@ -18,6 +18,8 @@ Engineering velocity is bounded by cognitive load and human review throughput, n
 
 - **Maximal Information Density:** Every token must carry distinct semantic weight. Eliminate conversational filler, redundant restatements, and generic meta-phrasing across all outputs (code, docs, PR descriptions, and chat responses).
 - **Single Source Definition:** Never duplicate specs, documentation, or code structures. Define a concept once at its canonical source and reference it everywhere else.
+- **Prefer Simple Solutions:** Use the simplest approach that solves the problem. Reuse existing solutions and add code only when it provides clear application value. Discuss it with the user before choosing a hacky, over-engineered, or unusually complex approach you strongly favor.
+- **Keep Files Focused:** Aim to keep code files under 300–400 lines. When a file exceeds that, consider splitting its responsibilities. Discuss it with the user before keeping a larger file when you believe the size is justified.
 
 ## 3. Spec-Driven Boundary Types
 
@@ -44,3 +46,7 @@ Engineering velocity is bounded by cognitive load and human review throughput, n
 Shift-Left Guardrails: Strongly favor pre-commit hooks for rapid local validation, especially in early-stage repositories where CI/CD pipelines are intentionally minimal.
 
 Zero-Maintenance Drift Detection: Configure hooks to self-verify against the repository's current hook definitions at execution time. If upstream hook definitions change (e.g., after a git pull), the hook must automatically re-register or update itself and execute the latest checks without manual user intervention.
+
+## 7. Configuration as Code
+
+Always leverage configuration-as-code when possible. This snapshots and versions settings for other platforms, such as databases, CI/CD, cloud platforms, and more. Use in conjunction with CLI's, SDK's, etc.
