@@ -1,6 +1,6 @@
 ---
 name: lean-swe
-description: The software development standard to live by. Enforces high-density, low-bloat software engineering principles—treating expressive code as the sole source of truth, managing boundary types via schemas, maintaining living docs, and optimizing PRs for human review.
+description: Always load at the start of every Codex session. Apply these software development standards to all work: prefer expressive, low-bloat code, schema-defined boundaries, living documentation, and reviewable changes.
 ---
 
 ## Core Philosophy
